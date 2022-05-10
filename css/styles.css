@@ -19,7 +19,17 @@ body {
 .heading {
 	font-family: var(--ft-headings);
 }
-
+.icon-container {
+	border: 1px solid var(--clr-vpale-cyan);
+	border-radius: 100%;
+	padding: 1rem;
+	transition: all 0.2s;
+}
+.icon-container:hover {
+	color: var(--clr-pink);
+	cursor: pointer;
+	border: 1px solid var(--clr-pink);
+}
 /* Buttons */
 
 .btn {
@@ -29,9 +39,9 @@ body {
 	padding: 1.5rem 5rem;
 	font-weight: 700;
 	box-shadow: 0px 3px 10px rgba(138, 138, 138, 0.432);
-	transition: opacity .2s;
+	transition: opacity 0.2s;
 }
-.btn:hover{
+.btn:hover {
 	cursor: pointer;
 	opacity: 50%;
 }
@@ -124,7 +134,7 @@ body {
 
 /* Call to Action*/
 
-.cta{
+.cta {
 	width: 50%;
 	box-shadow: 0px 0px 15px rgba(216, 216, 216, 0.5);
 	border-radius: 10px;
@@ -132,11 +142,73 @@ body {
 	text-align: center;
 	padding: 3rem 0;
 }
-.cta h1{
+.cta h1 {
 	margin-bottom: 4rem;
 	font-size: 2.5rem;
 }
 
+/* Links*/
+
+a {
+	text-decoration: none;
+	color: var(--clr-vpale-cyan);
+}
+
 /* Footer*/
 
-
+.footer {
+	background: var(--clr-vdark-cyan);
+	color: var(--clr-vpale-cyan);
+	padding: 10rem 0;
+}
+.footer-content {
+	display: flex;
+	gap: 8rem;
+	width: 80%;
+	margin: 0 auto;
+}
+.contact {
+	display: flex;
+	gap: 3rem;
+}
+.col-one_img {
+	width: 2rem;
+	height: 2rem;
+}
+.col-one .logo {
+	filter: brightness(0) invert(1);
+	width: 20rem;
+	margin-bottom: 3rem;
+}
+.col-one a {
+	margin-bottom: 1.5rem;
+}
+.col-one,
+.col-two,
+.col-three,
+.col-four {
+	display: flex;
+	flex-direction: column;
+	gap: 1.8rem;
+	justify-content: center;
+}
+.col-one {
+	max-width: 40ch;
+}
+.col-two a:hover,
+.col-three a:hover {
+	text-decoration: underline;
+}
+.social {
+	display: flex;
+	gap: 2rem;
+	font-size: 1.2rem;
+	position: relative;
+	bottom: 3rem;
+}
+p {
+	font-size: 1rem;
+	position: relative;
+	bottom: -6rem;
+	left: 70%;
+}
