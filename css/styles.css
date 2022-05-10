@@ -29,6 +29,11 @@ body {
 	padding: 1.5rem 5rem;
 	font-weight: 700;
 	box-shadow: 0px 3px 10px rgba(138, 138, 138, 0.432);
+	transition: opacity .2s;
+}
+.btn:hover{
+	cursor: pointer;
+	opacity: 50%;
 }
 .btn-primary {
 	background: var(--clr-pink);
@@ -116,3 +121,22 @@ body {
 	width: 60%;
 	height: 80%;
 }
+
+/* Call to Action*/
+
+.cta{
+	width: 50%;
+	box-shadow: 0px 0px 15px rgba(216, 216, 216, 0.5);
+	border-radius: 10px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 3rem 0;
+}
+.cta h1{
+	margin-bottom: 4rem;
+	font-size: 2.5rem;
+}
+
+/* Footer*/
+
+
