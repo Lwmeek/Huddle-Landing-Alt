@@ -43,7 +43,7 @@ body {
 }
 .btn:hover {
 	cursor: pointer;
-	opacity: 50%;
+	opacity: 75%;
 }
 .btn-primary {
 	background: var(--clr-pink);
@@ -69,6 +69,7 @@ body {
 	justify-content: space-between;
 	width: 90%;
 	margin: 4rem auto;
+	align-items: center;
 }
 .header-bar img {
 	height: 2rem;
@@ -87,12 +88,14 @@ body {
 .header-body_content h1 {
 	line-height: 5rem;
 	color: var(--clr-vdark-cyan);
+	max-width: 20ch;
 }
 .header-body_content p {
 	font-size: 1.6rem;
 	line-height: 2.3rem;
 	color: var(--clr-vdark-cyan);
 	margin-bottom: 3rem;
+	max-width: 50ch;
 }
 .header-body .btn {
 	font-size: 1.5rem;
@@ -100,6 +103,26 @@ body {
 .header-body_img {
 	width: 50%;
 	height: 50%;
+}
+@media screen and (max-width: 768px) {
+	.header-body {
+		flex-direction: column;
+		text-align: center;
+	}
+	.header-bar .btn {
+		font-size: 1rem;
+		padding: 1rem 3rem;
+	}
+	.header-body_content h1 {
+		font-size: 2.5rem;
+		line-height: 3.5rem;
+	}
+	.header-body_content p {
+		max-width: 33ch;
+	}
+	.header-body_img {
+		width: 90%;
+	}
 }
 
 /* Sections Styles*/
