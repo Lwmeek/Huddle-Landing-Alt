@@ -22,7 +22,7 @@ body {
 .icon-container {
 	border: 1px solid var(--clr-vpale-cyan);
 	border-radius: 100%;
-	padding: .7rem;
+	padding: 0.7rem;
 	transition: all 0.2s;
 }
 .icon-container:hover {
@@ -127,6 +127,10 @@ body {
 	font-size: 1.4rem;
 	color: var(--clr-grayish-blue);
 	line-height: 2rem;
+	max-width: 49ch;
+}
+.section-users p {
+	max-width: 47ch;
 }
 .section-img {
 	width: 40%;
@@ -136,6 +140,38 @@ body {
 	padding: 3rem;
 }
 
+@media screen and (max-width: 768px) {
+	.section {
+		flex-direction: column;
+		height: auto;
+		padding: 5rem 0 3rem;
+		width: 80%;
+		gap: 0;
+		text-align: center;
+	}
+	.section-img {
+		width: 70%;
+	}
+	.section-grow,
+	.section-users {
+		flex-direction: column-reverse;
+	}
+	.section-content {
+		margin: 0;
+	}
+	.section-content h2 {
+		font-size: 1.8rem;
+		margin: 5rem 0 1.5rem;
+	}
+	.section-content p {
+		font-size: 1.2rem;
+		max-width: 32ch;
+		margin: 0;
+	}
+	.section-users p {
+		max-width: 31ch;
+	}
+}
 /* Call to Action*/
 
 .cta {
@@ -179,7 +215,7 @@ a {
 .col-one .logo {
 	filter: brightness(0) invert(1);
 	width: 20rem;
-	margin-bottom:2rem;
+	margin-bottom: 2rem;
 }
 .col-one a {
 	margin-bottom: 1.5rem;
@@ -189,17 +225,17 @@ a {
 .col-three {
 	display: flex;
 	flex-direction: column;
-	
 }
 .col-one {
 	max-width: 40ch;
 	grid-column: span 2;
 	gap: 2rem;
 }
-.col-two{
+.col-two {
 	margin-left: 2rem;
 }
-.col-two, .col-three{
+.col-two,
+.col-three {
 	justify-content: center;
 	gap: 2rem;
 }
@@ -215,7 +251,7 @@ a {
 	position: absolute;
 	top: 16rem;
 }
-.social .icon{
+.social .icon {
 	width: 1.5rem;
 	height: 1.5rem;
 }
@@ -225,24 +261,24 @@ a {
 	left: 80%;
 	font-size: 1rem;
 }
-@media screen and (max-width:850px){
-	.footer{
+@media screen and (max-width: 768px) {
+	.footer {
 		min-height: 60rem;
 		padding-bottom: 2rem;
 	}
-	.footer-content{
+	.footer-content {
 		display: flex;
 		flex-direction: column;
 		gap: 0;
 	}
-	.col-two{
+	.col-two {
 		margin: 6rem 0 1.5rem;
 	}
-	.social{
+	.social {
 		position: static;
 		margin-top: 5rem;
 	}
-	.footer p{
+	.footer p {
 		text-align: center;
 		position: static;
 		margin: 3rem auto;
